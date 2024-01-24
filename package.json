@@ -6,7 +6,7 @@
   "author": "Lio Nguyen <lio.nguyen.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only src/app.ts"
   },
   "devDependencies": {
     "@types/config": "^3.3.3",
@@ -16,6 +16,7 @@
     "@types/nodemailer": "^6.4.14",
     "pino-pretty": "^10.3.1",
     "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {

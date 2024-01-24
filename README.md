@@ -2,6 +2,8 @@
 
 [Auth Api Tutorial Repo](https://github.com/TomDoesTech/auth-api-tutorial)
 
+[Typescript paths with ts-node, ts-node-dev, and jest](https://medium.com/@fmoessle/typescript-paths-with-ts-node-ts-node-dev-and-jest-671deacf6428)
+
 # SETUP
 
 ## Init project
@@ -20,7 +22,7 @@ tsc --init
 ## Install dev dependencies
 
 ```bash
-yarn add typescript ts-node-dev @types/express @types/config pino-pretty @types/nodemailer @types/lodash @types/jsonwebtoken -D
+yarn add typescript ts-node-dev tsconfig-paths @types/express @types/config pino-pretty @types/nodemailer @types/lodash @types/jsonwebtoken -D
 ```
 
 ## Install Express
@@ -40,7 +42,7 @@ yarn add mongoose @typegoose/typegoose config argon2 pino dayjs nanoid nodemaile
 ```json
 {
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only src/app.ts"
   }
 }
 ```
