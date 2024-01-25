@@ -8,6 +8,8 @@ import router from "@/routes/index";
 
 const app = express();
 
+app.use(express.json());
+
 app.use(router);
 
 const port = config.get("port");
