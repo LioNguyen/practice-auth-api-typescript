@@ -61,6 +61,6 @@ export class User {
   }
 }
 
-const UserModal = getModelForClass(User);
+const UserModel = getModelForClass(User);
 
-export default UserModal;
+export default UserModel;
